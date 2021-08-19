@@ -1,10 +1,22 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Image, View } from 'react-native';
 
-// import { Container } from './styles';
+import Styles from './styles';
 
 const Header: React.FC = () => {
-  return <View />;
+
+
+  return (
+    <View style={Styles.container}>
+      <Image
+        source={require('../../assets/images/user.jpg')}
+        style={Styles.userImage}
+        />
+      <Image
+        source={require('../../assets/images/chat_icon.png')}
+      />
+    </View>
+  );
 }
 
 export default Header;
